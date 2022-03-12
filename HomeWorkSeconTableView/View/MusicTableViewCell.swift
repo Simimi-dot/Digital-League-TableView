@@ -32,7 +32,7 @@ class MusicTableViewCell: UITableViewCell {
         gradient.startPoint = CGPoint(x: 0, y: 0)
         gradient.endPoint = CGPoint(x: 1, y: 1)
         gradient.cornerRadius = 15
-        gradient.frame = CGRect(x: 0, y: 0, width: 350, height: 200)
+        gradient.frame = CGRect(x: 0, y: 0, width: 350, height: 180)
         return gradient
     }()
     

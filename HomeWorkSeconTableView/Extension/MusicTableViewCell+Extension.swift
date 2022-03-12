@@ -42,9 +42,9 @@ extension MusicTableViewCell {
             musicRatingLabel.bottomAnchor.constraint(equalTo: musicImageView.bottomAnchor),
             
             
-            musicButton.topAnchor.constraint(equalTo: musicRatingLabel.bottomAnchor, constant: 20),
+            musicButton.topAnchor.constraint(equalTo: musicRatingLabel.bottomAnchor),
             musicButton.trailingAnchor.constraint(equalTo: musicView.trailingAnchor, constant: -20),
-            musicButton.bottomAnchor.constraint(equalTo: musicView.bottomAnchor, constant: 0)
+            musicButton.bottomAnchor.constraint(equalTo: musicView.bottomAnchor, constant: -20)
         ])
     }
     
