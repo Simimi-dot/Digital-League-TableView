@@ -14,9 +14,10 @@ class HeaderSectionView: UITableViewHeaderFooterView {
        var view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 15
-        view.backgroundColor = .lightGray
+        view.backgroundColor = UIColor(red: 252/255.0, green: 60/255.0, blue: 68/255.0, alpha: 1)
         
         view.layer.shadowColor = UIColor.systemPink.cgColor
+//        view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOpacity = 0.6
         view.layer.shadowRadius = 5
         view.layer.shadowOffset = CGSize(width: 0, height: 7)
@@ -25,15 +26,15 @@ class HeaderSectionView: UITableViewHeaderFooterView {
         return view
     }()
     
-    lazy var gradientLayer: CAGradientLayer = {
-        var gradient = CAGradientLayer()
-        gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
-        gradient.startPoint = CGPoint(x: 0, y: 0)
-        gradient.endPoint = CGPoint(x: 1, y: 1)
-        gradient.cornerRadius = 15
-        gradient.frame = CGRect(x: 0, y: 0, width: 370, height: 100)
-        return gradient
-    }()
+//    lazy var gradientLayer: CAGradientLayer = {
+//        var gradient = CAGradientLayer()
+//        gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
+//        gradient.startPoint = CGPoint(x: 0, y: 0)
+//        gradient.endPoint = CGPoint(x: 1, y: 1)
+//        gradient.cornerRadius = 15
+//        gradient.frame = CGRect(x: 0, y: 0, width: 370, height: 100)
+//        return gradient
+//    }()
     
     lazy var headerImage: UIImageView = {
        var image = UIImageView()

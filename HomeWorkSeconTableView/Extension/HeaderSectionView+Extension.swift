@@ -12,20 +12,21 @@ import UIKit
 // HeaderSectionView
 extension HeaderSectionView {
     func configureHeader() {
-        contentView.backgroundColor = .black
+//        contentView.backgroundColor = .white
+        contentView.backgroundColor = .clear
         
-        contentView.addSubview(headerView)
         
-        headerView.layer.addSublayer(gradientLayer)
+        self.addSubview(headerView)
+//        headerView.layer.addSublayer(gradientLayer)
         headerView.addSubview(headerImage)
         headerView.addSubview(headerTitle)
         headerView.addSubview(headerButton)
         
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
-            headerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            headerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-            headerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+            headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
+            headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+            headerView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
             
             headerImage.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 20),
             headerImage.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 20),

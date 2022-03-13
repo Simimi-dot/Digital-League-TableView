@@ -13,14 +13,15 @@ import UIKit
 extension MusicTableViewCell {
     func configureCell() {
         
-        contentView.backgroundColor = .black
+        contentView.backgroundColor = .white
         
         contentView.addSubview(musicView)
-        musicView.layer.addSublayer(gradientLayer)
+//        musicView.layer.addSublayer(gradientLayer)
         musicView.addSubview(musicImageView)
         musicView.addSubview(musicLabel)
         musicView.addSubview(musicRatingLabel)
         musicView.addSubview(musicButton)
+        
         
         NSLayoutConstraint.activate([
             musicView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),

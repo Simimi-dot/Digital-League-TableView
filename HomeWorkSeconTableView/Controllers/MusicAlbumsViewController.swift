@@ -15,6 +15,7 @@ class MusicAlbumsViewController: UIViewController {
     let musicHeaderFooterId = "headerFooterId"
     
     let navigationBar = NavigationBarAppearance()
+
     
     var allGanreArray = [
         ExpandableMusicGanre(
@@ -54,7 +55,8 @@ class MusicAlbumsViewController: UIViewController {
         musicTable.dataSource = self
         musicTable.rowHeight = UITableView.automaticDimension
         musicTable.sectionHeaderTopPadding = 20
-        musicTable.backgroundColor = .black
+//        musicTable.sectionHeaderHeight = 100
+        musicTable.backgroundColor = .white
         
         musicTable.register(MusicTableViewCell.self, forCellReuseIdentifier: musicCellId)
         musicTable.register(HeaderSectionView.self, forHeaderFooterViewReuseIdentifier: musicHeaderFooterId)
@@ -62,6 +64,7 @@ class MusicAlbumsViewController: UIViewController {
     }()
     
     //MARK: - Life Cycle
+    
     override func loadView() {
         super.loadView()
         navigationItem.largeTitleDisplayMode = .automatic
@@ -76,6 +79,7 @@ class MusicAlbumsViewController: UIViewController {
         
         configureTableView()
         navigationBarConfigure()
+        
     }
     
     //MARK: - Methods

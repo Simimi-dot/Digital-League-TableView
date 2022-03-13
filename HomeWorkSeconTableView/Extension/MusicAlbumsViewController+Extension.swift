@@ -12,7 +12,7 @@ import UIKit
 // ConfigureTableView
 extension MusicAlbumsViewController {
     func configureTableView() {
-        self.view.backgroundColor = .black
+        self.view.backgroundColor = .white
         
         self.view.addSubview(musicTableView)
         
@@ -20,7 +20,7 @@ extension MusicAlbumsViewController {
             musicTableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
             musicTableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             musicTableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            musicTableView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
+            musicTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
         ])
     }
 }
@@ -66,6 +66,7 @@ extension MusicAlbumsViewController: UITableViewDelegate, UITableViewDataSource 
         
         cell.musicLabel.text = musicians
         cell.musicImageView.image = musiciansImage
+//        cell.gradientLayer.frame = cell.musicView.bounds
         
         if indexPath.row % 2 == 0 {
             cell.musicRatingLabel.text = "Rating: 5"
