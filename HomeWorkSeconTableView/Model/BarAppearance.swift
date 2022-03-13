@@ -11,10 +11,10 @@ struct NavigationBarAppearance {
     func barAppearance() -> UINavigationBarAppearance {
         let navigationBarAppearance = UINavigationBarAppearance()
         navigationBarAppearance.configureWithOpaqueBackground()
-        navigationBarAppearance.backgroundColor = .white
+        navigationBarAppearance.backgroundColor = .clear
         navigationBarAppearance.shadowColor = .clear
-        navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-        navigationBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black, .font: UIFont.systemFont(ofSize: 70, weight: .bold)]
+        navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 70, weight: .bold)]
         return navigationBarAppearance
     }
 }

@@ -15,7 +15,7 @@ class MusicAlbumsViewController: UIViewController {
     let musicHeaderFooterId = "headerFooterId"
     
     let navigationBar = NavigationBarAppearance()
-
+    
     
     var allGanreArray = [
         ExpandableMusicGanre(
@@ -31,14 +31,14 @@ class MusicAlbumsViewController: UIViewController {
             ganre: "Hip-Hop",
             ganreImgae: UIImage(named: "Hip-Hop"),
             musiciansImage: [UIImage(named: "Jay-z"), UIImage(named: "Eminem"), UIImage(named: "Snoop dog"), UIImage(named: "Dr. Dre")] ),
-
+        
         ExpandableMusicGanre(
             isExpanded: true,
             musicians: ["Pompeya", "Icona Pop", "Allie X", "Katy Perry"],
             ganre: "Pop",
             ganreImgae: UIImage(named: "Pop"),
             musiciansImage: [UIImage(named: "Pompeya"), UIImage(named: "Icona pop"), UIImage(named: "Allie X"), UIImage(named: "Katy Perry")] ),
-
+        
         ExpandableMusicGanre(
             isExpanded: true,
             musicians: ["Daft Punk", "David Guetta", "deadmau5"],
@@ -55,12 +55,31 @@ class MusicAlbumsViewController: UIViewController {
         musicTable.dataSource = self
         musicTable.rowHeight = UITableView.automaticDimension
         musicTable.sectionHeaderTopPadding = 20
-//        musicTable.sectionHeaderHeight = 100
-        musicTable.backgroundColor = .white
+        musicTable.backgroundColor = .clear
         
         musicTable.register(MusicTableViewCell.self, forCellReuseIdentifier: musicCellId)
         musicTable.register(HeaderSectionView.self, forHeaderFooterViewReuseIdentifier: musicHeaderFooterId)
         return musicTable
+    }()
+    
+    //    lazy var gradientLayer: CAGradientLayer = {
+    //        var gradient = CAGradientLayer()
+    //        gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
+    //        gradient.startPoint = CGPoint(x: 0, y: 0)
+    //        gradient.endPoint = CGPoint(x: 1, y: 1)
+    //        gradient.cornerRadius = 15
+    //        gradient.frame = CGRect(x: 0, y: 0, width: 370, height: 100)
+    //        return gradient
+    //    }()
+    
+    lazy var gradientLayer: CAGradientLayer = {
+        var gradient = CAGradientLayer()
+        gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 1, y: 1)
+        gradient.cornerRadius = 15
+        gradient.frame = self.view.bounds
+        return gradient
     }()
     
     //MARK: - Life Cycle

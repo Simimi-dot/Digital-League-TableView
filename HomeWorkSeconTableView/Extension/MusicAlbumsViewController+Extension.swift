@@ -14,6 +14,7 @@ extension MusicAlbumsViewController {
     func configureTableView() {
         self.view.backgroundColor = .white
         
+        self.view.layer.addSublayer(gradientLayer)
         self.view.addSubview(musicTableView)
         
         NSLayoutConstraint.activate([
@@ -28,6 +29,10 @@ extension MusicAlbumsViewController {
 
 // UITableViewDelegate, UITableViewDataSource
 extension MusicAlbumsViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = .clear
+    }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerSectionView = HeaderSectionView()
@@ -66,13 +71,14 @@ extension MusicAlbumsViewController: UITableViewDelegate, UITableViewDataSource 
         
         cell.musicLabel.text = musicians
         cell.musicImageView.image = musiciansImage
-//        cell.gradientLayer.frame = cell.musicView.bounds
+        
         
         if indexPath.row % 2 == 0 {
             cell.musicRatingLabel.text = "Rating: 5"
         } else {
             cell.musicRatingLabel.text = "Rating: 4"
         }
+        
         
         return cell
     }

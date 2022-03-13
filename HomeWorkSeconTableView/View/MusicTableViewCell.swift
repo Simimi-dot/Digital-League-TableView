@@ -16,10 +16,8 @@ class MusicTableViewCell: UITableViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 15
         view.backgroundColor = UIColor(red: 249/255.0, green: 76/255.0, blue: 87/255.0, alpha: 1)
-//        view.backgroundColor = .clear
         
         view.layer.shadowColor = UIColor.systemPink.cgColor
-//        view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOpacity = 0.6
         view.layer.shadowRadius = 5
         view.layer.shadowOffset = CGSize(width: 0, height: 7)
@@ -27,18 +25,6 @@ class MusicTableViewCell: UITableViewCell {
         
         return view
     }()
-    
-//    lazy var gradientLayer: CAGradientLayer = {
-//        var gradient = CAGradientLayer()
-//        gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
-//        gradient.startPoint = CGPoint(x: 0, y: 0)
-//        gradient.endPoint = CGPoint(x: 1, y: 1)
-//        gradient.cornerRadius = 15
-//        gradient.frame = CGRect(x: 0, y: 0, width: 350, height: 180)
-//        gradient.frame = musicView.bounds
-//        return gradient
-//    }()
-    
     
     lazy var musicImageView: UIImageView = {
        var image = UIImageView()
@@ -62,7 +48,6 @@ class MusicTableViewCell: UITableViewCell {
     lazy var musicRatingLabel: UILabel = {
         var rating = UILabel()
         rating.translatesAutoresizingMaskIntoConstraints = false
-//        rating.text = "Music Rating"
         rating.textColor = .white
         return rating
     }()
@@ -71,9 +56,9 @@ class MusicTableViewCell: UITableViewCell {
        var button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .clear
-        button.setTitleColor(.black, for: .normal)
+        button.setTitleColor(.white, for: .normal)
         button.setTitle("Check songs", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .light)
         button.layer.cornerRadius = 5
         return button
     }()
@@ -82,6 +67,7 @@ class MusicTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureCell()
+        selectionStyle = .none
         
     }
     

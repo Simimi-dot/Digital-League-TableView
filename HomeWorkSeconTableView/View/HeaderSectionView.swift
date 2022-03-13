@@ -59,7 +59,6 @@ class HeaderSectionView: UITableViewHeaderFooterView {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("-", for: .normal)
         button.setTitleColor(.white, for: .normal)
-//        button.backgroundColor = .systemBlue
         button.backgroundColor = .clear
         button.layer.cornerRadius = 5
         return button
@@ -69,6 +68,7 @@ class HeaderSectionView: UITableViewHeaderFooterView {
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         configureHeader()
+        configureBackgroundHeaderColor()
     }
     
     required init?(coder: NSCoder) {
