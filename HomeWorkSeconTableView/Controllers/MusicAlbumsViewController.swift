@@ -53,7 +53,7 @@ class MusicAlbumsViewController: UIViewController {
         musicTable.delegate = self
         musicTable.dataSource = self
         musicTable.rowHeight = UITableView.automaticDimension
-        musicTable.sectionHeaderTopPadding = 0.0
+        musicTable.sectionHeaderTopPadding = 20
         musicTable.backgroundColor = .black
         
         musicTable.register(MusicTableViewCell.self, forCellReuseIdentifier: musicCellId)

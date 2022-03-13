@@ -12,7 +12,7 @@ import UIKit
 // HeaderSectionView
 extension HeaderSectionView {
     func configureHeader() {
-        contentView.backgroundColor = .clear
+        contentView.backgroundColor = .black
         
         contentView.addSubview(headerView)
         
