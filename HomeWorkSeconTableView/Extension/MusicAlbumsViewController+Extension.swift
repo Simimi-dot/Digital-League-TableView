@@ -60,7 +60,7 @@ extension MusicAlbumsViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: musicCellId, for: indexPath) as? MusicTableViewCell else { return UITableViewCell()}
-        
+
         let musicians = allGanreArray[indexPath.section].musicians[indexPath.row]
         let musiciansImage = allGanreArray[indexPath.section].musiciansImage[indexPath.row]
         

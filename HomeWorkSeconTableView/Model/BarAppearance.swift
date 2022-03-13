@@ -14,7 +14,7 @@ struct NavigationBarAppearance {
         navigationBarAppearance.backgroundColor = .black
         navigationBarAppearance.shadowColor = .clear
         navigationBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        navigationBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.systemFont(ofSize: 70, weight: .bold)]
         return navigationBarAppearance
     }
 }

@@ -33,6 +33,7 @@ class MusicTableViewCell: UITableViewCell {
         gradient.endPoint = CGPoint(x: 1, y: 1)
         gradient.cornerRadius = 15
         gradient.frame = CGRect(x: 0, y: 0, width: 350, height: 180)
+//        gradient.frame = musicView.bounds
         return gradient
     }()
     
@@ -69,7 +70,7 @@ class MusicTableViewCell: UITableViewCell {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .clear
         button.setTitleColor(.black, for: .normal)
-        button.setTitle("Check this album", for: .normal)
+        button.setTitle("Check songs", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         button.layer.cornerRadius = 5
         return button
