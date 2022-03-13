@@ -8,7 +8,7 @@
 import UIKit
 
 //MARK: - Class
-class HeaderSectionView: UITableViewCell {
+class HeaderSectionView: UITableViewHeaderFooterView {
     //MARK: - Properties
     lazy var headerView: UIView = {
        var view = UIView()
@@ -65,8 +65,8 @@ class HeaderSectionView: UITableViewCell {
     }()
     
     //MARK: - Init
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(reuseIdentifier: String?) {
+        super.init(reuseIdentifier: reuseIdentifier)
         configureHeader()
     }
     

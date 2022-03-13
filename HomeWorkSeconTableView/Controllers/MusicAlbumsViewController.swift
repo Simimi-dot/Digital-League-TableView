@@ -12,6 +12,7 @@ class MusicAlbumsViewController: UIViewController {
     
     //MARK: - Properties
     let musicCellId = "musicCellId"
+    let musicHeaderFooterId = "headerFooterId"
     
     let navigationBar = NavigationBarAppearance()
     
@@ -56,6 +57,7 @@ class MusicAlbumsViewController: UIViewController {
         musicTable.backgroundColor = .black
         
         musicTable.register(MusicTableViewCell.self, forCellReuseIdentifier: musicCellId)
+        musicTable.register(HeaderSectionView.self, forHeaderFooterViewReuseIdentifier: musicHeaderFooterId)
         return musicTable
     }()
     
