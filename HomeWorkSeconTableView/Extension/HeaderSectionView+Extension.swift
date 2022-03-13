@@ -10,8 +10,8 @@ import UIKit
 //MARK: - Extension
 
 // HeaderSectionView
-extension HeaderSectionView {
-    func configureHeader() {
+extension HeaderSectionView: ConfigureViewProtocol {
+    func configureView() {
         
         self.addSubview(headerView)
         headerView.addSubview(headerImage)

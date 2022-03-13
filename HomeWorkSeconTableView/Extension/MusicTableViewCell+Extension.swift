@@ -9,9 +9,9 @@ import UIKit
 
 //MARK: - Extension
 
-// MusicTableViewCell
-extension MusicTableViewCell {
-    func configureCell() {
+// ConfigureViewProtocol
+extension MusicTableViewCell: ConfigureViewProtocol {
+    func configureView() {
         
         contentView.addSubview(musicView)
         musicView.addSubview(musicImageView)

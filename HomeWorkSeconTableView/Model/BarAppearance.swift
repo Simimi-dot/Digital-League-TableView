@@ -7,6 +7,7 @@
 
 import UIKit
 
+//MARK: - Struct
 struct NavigationBarAppearance {
     func barAppearance() -> UINavigationBarAppearance {
         let navigationBarAppearance = UINavigationBarAppearance()

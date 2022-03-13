@@ -9,9 +9,9 @@ import UIKit
 
 //MARK: - Extension
 
-// ConfigureTableView
-extension MusicAlbumsViewController {
-    func configureTableView() {
+// ConfigureViewProtocol
+extension MusicAlbumsViewController: ConfigureViewProtocol {
+    func configureView() {
         self.view.backgroundColor = .white
         
         self.view.layer.addSublayer(gradientLayer)
@@ -72,13 +72,11 @@ extension MusicAlbumsViewController: UITableViewDelegate, UITableViewDataSource 
         cell.musicLabel.text = musicians
         cell.musicImageView.image = musiciansImage
         
-        
         if indexPath.row % 2 == 0 {
             cell.musicRatingLabel.text = "Rating: 5"
         } else {
             cell.musicRatingLabel.text = "Rating: 4"
         }
-        
         
         return cell
     }

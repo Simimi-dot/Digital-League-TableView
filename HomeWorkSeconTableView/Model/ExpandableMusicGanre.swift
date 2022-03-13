@@ -8,6 +8,7 @@
 
 import UIKit
 
+//MARK: - Struct
 struct ExpandableMusicGanre {
     var isExpanded: Bool
     let musicians : [String]

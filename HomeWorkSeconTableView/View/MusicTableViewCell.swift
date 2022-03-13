@@ -12,7 +12,7 @@ class MusicTableViewCell: UITableViewCell {
     
     //MARK: - Properties
     lazy var musicView: UIView = {
-       var view = UIView()
+        var view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 15
         view.backgroundColor = UIColor(red: 249/255.0, green: 76/255.0, blue: 87/255.0, alpha: 1)
@@ -27,7 +27,7 @@ class MusicTableViewCell: UITableViewCell {
     }()
     
     lazy var musicImageView: UIImageView = {
-       var image = UIImageView()
+        var image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
         image.backgroundColor = .black
         image.layer.borderWidth = 2
@@ -53,7 +53,7 @@ class MusicTableViewCell: UITableViewCell {
     }()
     
     lazy var musicButton: UIButton = {
-       var button = UIButton()
+        var button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.backgroundColor = .clear
         button.setTitleColor(.white, for: .normal)
@@ -66,9 +66,8 @@ class MusicTableViewCell: UITableViewCell {
     //MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        configureCell()
+        configureView()
         selectionStyle = .none
-        
     }
     
     required init?(coder: NSCoder) {

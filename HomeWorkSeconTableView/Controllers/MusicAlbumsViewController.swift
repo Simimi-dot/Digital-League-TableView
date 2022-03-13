@@ -11,11 +11,10 @@ import UIKit
 class MusicAlbumsViewController: UIViewController {
     
     //MARK: - Properties
-    let musicCellId = "musicCellId"
-    let musicHeaderFooterId = "headerFooterId"
+     let musicCellId = "musicCellId"
+     let musicHeaderFooterId = "headerFooterId"
     
     let navigationBar = NavigationBarAppearance()
-    
     
     var allGanreArray = [
         ExpandableMusicGanre(
@@ -62,16 +61,6 @@ class MusicAlbumsViewController: UIViewController {
         return musicTable
     }()
     
-    //    lazy var gradientLayer: CAGradientLayer = {
-    //        var gradient = CAGradientLayer()
-    //        gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
-    //        gradient.startPoint = CGPoint(x: 0, y: 0)
-    //        gradient.endPoint = CGPoint(x: 1, y: 1)
-    //        gradient.cornerRadius = 15
-    //        gradient.frame = CGRect(x: 0, y: 0, width: 370, height: 100)
-    //        return gradient
-    //    }()
-    
     lazy var gradientLayer: CAGradientLayer = {
         var gradient = CAGradientLayer()
         gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
@@ -96,9 +85,8 @@ class MusicAlbumsViewController: UIViewController {
         
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        configureTableView()
+        configureView()
         navigationBarConfigure()
-        
     }
     
     //MARK: - Methods

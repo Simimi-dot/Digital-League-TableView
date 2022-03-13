@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0655EB2227DE31A5009A1B86 /* ConfigureViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655EB2127DE31A5009A1B86 /* ConfigureViewProtocol.swift */; };
 		0690506427DCB96E005D821B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0690506327DCB96E005D821B /* AppDelegate.swift */; };
 		0690506627DCB96E005D821B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0690506527DCB96E005D821B /* SceneDelegate.swift */; };
 		0690506D27DCB970005D821B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0690506C27DCB970005D821B /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0655EB2127DE31A5009A1B86 /* ConfigureViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureViewProtocol.swift; sourceTree = "<group>"; };
 		0690506027DCB96E005D821B /* HomeWorkSeconTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeWorkSeconTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0690506327DCB96E005D821B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0690506527DCB96E005D821B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		0690507F27DCE1EC005D821B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0655EB2127DE31A5009A1B86 /* ConfigureViewProtocol.swift */,
 				0690508527DD2047005D821B /* BarAppearance.swift */,
 				0690508027DCE217005D821B /* ExpandableMusicGanre.swift */,
 			);
@@ -198,6 +201,7 @@
 				0690508927DD362B005D821B /* MusicAlbumsViewController+Extension.swift in Sources */,
 				0690506427DCB96E005D821B /* AppDelegate.swift in Sources */,
 				0690508127DCE217005D821B /* ExpandableMusicGanre.swift in Sources */,
+				0655EB2227DE31A5009A1B86 /* ConfigureViewProtocol.swift in Sources */,
 				0690508627DD2047005D821B /* BarAppearance.swift in Sources */,
 				0690507827DCBA4F005D821B /* MusicAlbumsViewController.swift in Sources */,
 				0690508327DCF786005D821B /* HeaderSectionView.swift in Sources */,
