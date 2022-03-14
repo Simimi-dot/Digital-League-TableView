@@ -13,16 +13,16 @@ import UIKit
 extension HeaderSectionView: ConfigureViewProtocol {
     func configureView() {
         
-        self.addSubview(headerView)
+        addSubview(headerView)
         headerView.addSubview(headerImage)
         headerView.addSubview(headerTitle)
         headerView.addSubview(headerButton)
         
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
-            headerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
-            headerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
-            headerView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10),
+            headerView.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+            headerView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
+            headerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
+            headerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
             
             headerImage.topAnchor.constraint(equalTo: headerView.topAnchor, constant: 20),
             headerImage.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 20),

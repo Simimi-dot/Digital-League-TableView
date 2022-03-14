@@ -58,6 +58,7 @@ class MusicAlbumsViewController: UIViewController {
         
         musicTable.register(MusicTableViewCell.self, forCellReuseIdentifier: musicCellId)
         musicTable.register(HeaderSectionView.self, forHeaderFooterViewReuseIdentifier: musicHeaderFooterId)
+        
         return musicTable
     }()
     
@@ -67,7 +68,7 @@ class MusicAlbumsViewController: UIViewController {
         gradient.startPoint = CGPoint(x: 0, y: 0)
         gradient.endPoint = CGPoint(x: 1, y: 1)
         gradient.cornerRadius = 15
-        gradient.frame = self.view.bounds
+        gradient.frame = view.bounds
         return gradient
     }()
     

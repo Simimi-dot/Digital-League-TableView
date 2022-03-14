@@ -12,16 +12,16 @@ import UIKit
 // ConfigureViewProtocol
 extension MusicAlbumsViewController: ConfigureViewProtocol {
     func configureView() {
-        self.view.backgroundColor = .white
+        view.backgroundColor = .white
         
-        self.view.layer.addSublayer(gradientLayer)
-        self.view.addSubview(musicTableView)
+        view.layer.addSublayer(gradientLayer)
+        view.addSubview(musicTableView)
         
         NSLayoutConstraint.activate([
-            musicTableView.topAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.topAnchor),
-            musicTableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            musicTableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            musicTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
+            musicTableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            musicTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            musicTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            musicTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
     }
 }
