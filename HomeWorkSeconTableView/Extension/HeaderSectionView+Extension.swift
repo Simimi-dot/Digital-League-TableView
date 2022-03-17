@@ -21,7 +21,7 @@ extension HeaderSectionView: ConfigureViewProtocol {
         headerView.addSubview(headerButton)
         
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+            headerView.topAnchor.constraint(equalTo: topAnchor, constant: 5),
             headerView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 10),
             headerView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -10),
             headerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),

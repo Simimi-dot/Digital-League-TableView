@@ -17,11 +17,12 @@ class MusicTableViewCell: UITableViewCell {
         view.layer.cornerRadius = 15
         view.backgroundColor = UIColor(red: 249/255.0, green: 76/255.0, blue: 87/255.0, alpha: 1)
         
-        view.layer.shadowColor = UIColor.systemPink.cgColor
+        view.layer.shadowColor = UIColor.black.cgColor
         view.layer.shadowOpacity = 0.6
-        view.layer.shadowRadius = 5
-        view.layer.shadowOffset = CGSize(width: 0, height: 7)
+        view.layer.shadowRadius = 10
+        view.layer.shadowOffset = CGSize(width: 0, height: 0)
         view.layer.masksToBounds = false
+        
         
         return view
     }()
