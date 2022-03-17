@@ -106,6 +106,8 @@ extension MusicAlbumsViewController {
         } else {
             musicTableView.insertRows(at: indexPaths, with: .left)
         }
+        
+//        musicTableView.reloadData()
     }
 }
 

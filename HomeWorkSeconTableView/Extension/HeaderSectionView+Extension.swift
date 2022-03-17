@@ -13,7 +13,9 @@ import UIKit
 extension HeaderSectionView: ConfigureViewProtocol {
     func configureView() {
         
+        
         addSubview(headerView)
+        headerView.layer.addSublayer(gradientLayer)
         headerView.addSubview(headerImage)
         headerView.addSubview(headerTitle)
         headerView.addSubview(headerButton)

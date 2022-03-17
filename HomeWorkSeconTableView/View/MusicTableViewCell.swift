@@ -26,6 +26,15 @@ class MusicTableViewCell: UITableViewCell {
         return view
     }()
     
+    lazy var gradientLayer: CAGradientLayer = {
+        var gradient = CAGradientLayer()
+        gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 1, y: 1)
+        gradient.cornerRadius = 15
+        return gradient
+    }()
+    
     lazy var musicImageView: UIImageView = {
         var image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -62,6 +71,12 @@ class MusicTableViewCell: UITableViewCell {
         button.layer.cornerRadius = 5
         return button
     }()
+    
+    //MARK: - Life cycle
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradientLayer.frame = musicView.bounds
+    }
     
     //MARK: - Init
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {

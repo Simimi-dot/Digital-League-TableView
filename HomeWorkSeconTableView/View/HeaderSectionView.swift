@@ -25,6 +25,15 @@ class HeaderSectionView: UITableViewHeaderFooterView {
         return view
     }()
     
+    lazy var gradientLayer: CAGradientLayer = {
+        var gradient = CAGradientLayer()
+        gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
+        gradient.startPoint = CGPoint(x: 0, y: 0)
+        gradient.endPoint = CGPoint(x: 1, y: 1)
+        gradient.cornerRadius = 15
+        return gradient
+    }()
+    
     lazy var headerImage: UIImageView = {
         var image = UIImageView()
         image.translatesAutoresizingMaskIntoConstraints = false
@@ -52,6 +61,11 @@ class HeaderSectionView: UITableViewHeaderFooterView {
         button.layer.cornerRadius = 5
         return button
     }()
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradientLayer.frame = headerView.bounds
+    }
     
     //MARK: - Init
     override init(reuseIdentifier: String?) {

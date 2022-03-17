@@ -13,6 +13,9 @@ import UIKit
 extension MusicTableViewCell: ConfigureViewProtocol {
     func configureView() {
         
+        
+        
+        musicView.layer.addSublayer(gradientLayer)
         contentView.addSubview(musicView)
         musicView.addSubview(musicImageView)
         musicView.addSubview(musicLabel)

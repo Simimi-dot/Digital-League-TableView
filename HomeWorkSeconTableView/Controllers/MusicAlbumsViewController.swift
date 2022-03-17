@@ -64,7 +64,7 @@ class MusicAlbumsViewController: UIViewController {
     
     lazy var gradientLayer: CAGradientLayer = {
         var gradient = CAGradientLayer()
-        gradient.colors = [UIColor.blue.cgColor, UIColor.systemPink.cgColor]
+        gradient.colors = [UIColor.green.cgColor, UIColor.blue.cgColor]
         gradient.startPoint = CGPoint(x: 0, y: 0)
         gradient.endPoint = CGPoint(x: 1, y: 1)
         gradient.cornerRadius = 15
