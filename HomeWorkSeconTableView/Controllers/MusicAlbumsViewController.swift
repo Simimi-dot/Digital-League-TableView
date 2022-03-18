@@ -52,7 +52,8 @@ class MusicAlbumsViewController: UIViewController {
         musicTable.separatorColor = .clear
         musicTable.delegate = self
         musicTable.dataSource = self
-        musicTable.rowHeight = UITableView.automaticDimension
+//        musicTable.rowHeight = UITableView.automaticDimension
+        musicTable.estimatedRowHeight = 180
         musicTable.sectionHeaderTopPadding = 20
         musicTable.backgroundColor = .clear
         
